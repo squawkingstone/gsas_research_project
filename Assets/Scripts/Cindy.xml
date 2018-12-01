@@ -1,0 +1,32 @@
+<nodes>
+    <node>
+        <id>How was traffic?</id>
+        <text>It was terrible!</text>
+        <text>I'd sooner die than drive on the 405 during rush hour again.</text>
+    </node>
+    <node>
+        <id>How's the food here?</id>
+        <text>I love the food here</text>
+        <text>This is one of my fave restaurants.</text>
+    </node>
+    <node>
+        <id>Was work today okay?</id>
+        <text>Oh, who doesn't love working 9-5 every day?</text>
+        <text>Nothing like capitalism!</text>
+    </node>
+    <node>
+        <id>Got any hobbies?</id>
+        <text>Oof, I wish I had time for a hobby.</text>
+        <text>But, I have rent to pay.</text>
+    </node>
+    <node>
+        <id>Other</id>
+        <text>...</text>
+        <text>...yea</text>
+    </node>
+    <node>
+        <id>Something</id>
+        <text>bih</text>
+        <text>i cant write</text>
+    </node>
+</nodes>

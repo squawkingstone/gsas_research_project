@@ -26,7 +26,7 @@ using UnityEngine.UI;
 public class DateController : MonoBehaviour 
 {
 	[System.Serializable]
-	private class Response
+	public class Response
 	{
 		[SerializeField] public string id;
 		[SerializeField] public List<string> response;
@@ -49,11 +49,14 @@ public class DateController : MonoBehaviour
 	void Start() 
 	{
 		int i = 0;
+		/*
 		_responses = new Dictionary<string, List<string>>();
 		foreach (Response r in _responses_list)
 		{
 			_responses.Add(r.id, r.response);
 		}
+		*/
+		_responses = XMLParser.xmlParse("Cindy");
 		foreach (string k in _responses.Keys)
 		{
 			int index = i;

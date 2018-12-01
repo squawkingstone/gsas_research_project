@@ -1,0 +1,39 @@
+Each NPC the player is on a date with will have their own "brain" with
+their own sentiments on predetermined subjects that will arise in the scene.
+Subjects that arise are handled by a manager.
+
+NPC Brain Example:
+
+<npc>
+    <name>NPC_1</name>
+    <question>
+        <q_name>q_1</q_name>
+        <intent>I don't really like this...</intent>
+        <intent>I'm not a huge fan, to be honest!</intent>
+        <intent>This tastes like gym socks.</intent>
+        <literal>I like it!</literal>
+        <literal>I'm so into this!</literal>
+        <literal>It's like heaven in my mouth!</literal>
+    </question>
+</npc>
+
+The 6-tuple model of sarcasm (Ivanko and Pexman, 2003) provides a useful starting point for understanding 
+the structure of sarcastic statements. Defined as <p’, p, u, c, h, s>:
+	P’ : intended proposition
+	P : literal proposition
+	U : utterance
+	C : context
+	H : hearer/listener 
+	S : speaker
+
+The example used in Automatic Sarcasm Detection: A Survey illustrates this well:
+
+The tuple can be read as ‘Speaker S generates an utterance u in Context C meaning proposition p but intending that hearer H understands p’. 
+Consider the following example. If a teacher says to a student, “That’s how assignments should be done!” 
+and if the student knows that (s)he has barely completed the assignment, the student would understand the sarcasm. 
+In context of the 6-tuple above, the properties of this sarcasm would be:
+S: Teacher, H: Student
+C: The student has not completed his/her assignment.
+u: “That’s how assignments should be done!”
+p: You have done a good job at the assignment.
+p’: You have done a bad job at the assignment.
